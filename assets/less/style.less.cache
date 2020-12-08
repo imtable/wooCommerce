@@ -1,0 +1,217 @@
+a:4:{s:4:"root";s:24:"./assets/less/style.less";s:8:"compiled";s:7930:"@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/circular/CircularStd-MediumItalic.eot');
+  src: local('Circular Std Medium Italic'), local('CircularStd-MediumItalic'), url('../fonts/circular/CircularStd-MediumItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/circular/CircularStd-MediumItalic.woff2') format('woff2'), url('../fonts/circular/CircularStd-MediumItalic.woff') format('woff'), url('../fonts/circular/CircularStd-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/circular/CircularStd-Black.eot');
+  src: local('Circular Std Black'), local('CircularStd-Black'), url('../fonts/circular/CircularStd-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/circular/CircularStd-Black.woff2') format('woff2'), url('../fonts/circular/CircularStd-Black.woff') format('woff'), url('../fonts/circular/CircularStd-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/circular/CircularStd-Medium.eot');
+  src: local('Circular Std Medium'), local('CircularStd-Medium'), url('../fonts/circular/CircularStd-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/circular/CircularStd-Medium.woff2') format('woff2'), url('../fonts/circular/CircularStd-Medium.woff') format('woff'), url('../fonts/circular/CircularStd-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/circular/CircularStd-Bold.eot');
+  src: local('Circular Std Bold'), local('CircularStd-Bold'), url('../fonts/circular/CircularStd-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/circular/CircularStd-Bold.woff2') format('woff2'), url('../fonts/circular/CircularStd-Bold.woff') format('woff'), url('../fonts/circular/CircularStd-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/circular/CircularStd-BlackItalic.eot');
+  src: url('../fonts/circular/Circular Std Black Italic'), url('../fonts/circular/CircularStd-BlackItalic'), url('../fonts/circular/CircularStd-BlackItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/circular/CircularStd-BlackItalic.woff2') format('woff2'), url('../fonts/circular/CircularStd-BlackItalic.woff') format('woff'), url('../fonts/circular/CircularStd-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Circular Std Book';
+  src: url('../fonts/circular/CircularStd-BookItalic.eot');
+  src: url('../fonts/circular/Circular Std Book Italic'), url('../fonts/circular/CircularStd-BookItalic'), url('../fonts/circular/CircularStd-BookItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/circular/CircularStd-BookItalic.woff2') format('woff2'), url('../fonts/circular/CircularStd-BookItalic.woff') format('woff'), url('../fonts/circular/CircularStd-BookItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/circular/CircularStd-BoldItalic.eot');
+  src: url('../fonts/circular/Circular Std Bold Italic'), url('../fonts/circular/CircularStd-BoldItalic'), url('../fonts/circular/CircularStd-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/circular/CircularStd-BoldItalic.woff2') format('woff2'), url('../fonts/circular/CircularStd-BoldItalic.woff') format('woff'), url('../fonts/circular/CircularStd-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Circular Std Book';
+  src: url('../fonts/circular/CircularStd-Book.eot');
+  src: url('../fonts/circular/Circular Std Book'), url('../fonts/circular/CircularStd-Book'), url('../fonts/circular/CircularStd-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/circular/CircularStd-Book.woff2') format('woff2'), url('../fonts/circular/CircularStd-Book.woff') format('woff'), url('../fonts/circular/CircularStd-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.title {
+  width: 457px;
+  font-family: 'Circular Std';
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 70px;
+  margin: 0 auto;
+  text-align: center;
+}
+.subtitle {
+  font-size: 18px;
+  color: #94A2B3;
+}
+.link {
+  color: #299EF3;
+  font-size: 18px;
+  text-decoration: none;
+}
+.btn {
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  background-color: #7854F7;
+  color: white;
+  border-radius: 60px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+.section-start {
+  position: relative;
+  background: linear-gradient(180deg,#E5EFFF 0%,rgba(229,239,255,0.262661) 83.7%,rgba(229,239,255,0) 100%);
+}
+.section-start:before {
+  content: '';
+  background-image: url(../img/section-start-bg.png);
+  width: 963px;
+  height: 1087px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-size: cover;
+}
+.section-start .section-start_header {
+  position: relative;
+  z-index: 1;
+  padding: 38px 0 10px 0;
+}
+.section-start .section-start_header .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.section-start .section-start_header .header_leftside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+.section-start .section-start_header .header_leftside .logo {
+  min-width: 169px;
+  margin-right: 124px;
+  display: flex;
+  align-items: center;
+}
+.section-start .section-start_header .header_leftside .header_menu {
+  display: flex;
+  padding: 0 10px;
+}
+.section-start .section-start_header .header_leftside .header_menu .menu_item {
+  list-style: none;
+}
+.section-start .section-start_header .header_leftside .header_menu .menu_item + .menu_item {
+  margin-left: 19px;
+}
+.section-start .section-start_header .header_leftside .header_menu .menu_item a {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+}
+.section-start .section-start_header .header_rightside {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.section-start .section-start_header .header_rightside .header_log-in {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px 10px;
+  font-weight: 500;
+}
+.section-start .section-start_header .header_rightside .header_btn {
+  border-radius: 5px;
+  padding: 13px 15px;
+  margin-left: 28px;
+}
+.section-start .section-start_header .header_rightside .header_search {
+  margin-left: 20px;
+  padding: 10px 10px;
+  margin-left: 9px;
+}
+.section-start .section-start_building {
+  position: relative;
+  z-index: 1;
+  margin-top: 166px;
+  padding: 10px 0;
+}
+.section-start .section-start_building .buiding_wrapper .building_title {
+  width: 818px;
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 85px;
+  line-height: 95px;
+  margin-bottom: 10px;
+}
+.section-start .section-start_building .buiding_wrapper .building_subtitle {
+  margin-top: 28px;
+  width: 716px;
+  line-height: 25px;
+}
+.section-start .section-start_building .buiding_wrapper .building_btn {
+  padding: 25px 63px;
+  margin-top: 31px;
+}
+.section-start .section-start_building .buiding_wrapper span {
+  font-size: 18px;
+  color: #94A2B3;
+  margin-left: 4px;
+}
+.section-start .section-start_building .buiding_wrapper .building_link {
+  margin-left: 6px;
+}
+.section-start_features {
+  margin-top: 237px;
+  padding: 10px 0;
+}
+.section-start_features .features-wrapper {
+  display: flex;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container {
+  width: 1500px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.container.header_container {
+  width: 1830px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+";s:5:"files";a:4:{s:60:"/Applications/MAMP/htdocs/wooCommerce/assets/less/style.less";i:1607415778;s:60:"/Applications/MAMP/htdocs/wooCommerce/assets/less/fonts.less";i:1607353481;s:61:"/Applications/MAMP/htdocs/wooCommerce/assets/less/blocks.less";i:1607425977;s:62:"/Applications/MAMP/htdocs/wooCommerce/assets/less/screens.less";i:1607173404;}s:7:"updated";i:1607427848;}

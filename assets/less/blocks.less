@@ -1,0 +1,193 @@
+// main: style.less
+
+.wrapper {} 
+.section {}
+.title {
+   width: 457px;
+   font-family: 'Circular Std';
+   font-weight: bold;
+   font-size: 55px;
+   line-height: 70px;
+   margin: 0 auto;
+   text-align: center;
+}
+.subtitle {
+   font-size: 18px;
+   color: #94A2B3;
+}
+.link {
+   color: #299EF3;
+   font-size: 18px;
+   text-decoration: none;
+}
+
+// ______________________________buttons______________________________
+.btn {
+   border: none;
+   font-family: 'Roboto', sans-serif;
+   background-color: #7854F7;
+   color: white;
+   border-radius: 60px;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 21px;
+}
+.btn-green {
+
+}
+
+// ______________________________section-start______________________________
+.section-start {
+   position: relative;
+   background: linear-gradient(180deg, #E5EFFF 0%, rgba(229, 239, 255, 0.262661) 83.7%, rgba(229, 239, 255, 0) 100%);
+   &:before {
+      content: '';
+      background-image: url(../img/section-start-bg.png);
+      width: 963px;
+      height: 1087px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-size: cover;
+   }
+   .section-start_header {
+      position: relative;
+      z-index: 1;
+      padding: 38px 0 10px 0;
+      .header-wrapper {
+         display: flex;
+         justify-content: space-between;
+      } 
+      .header_leftside {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding-right: 10px;
+         .logo {
+            min-width: 169px;
+            margin-right: 124px;
+            display: flex;
+            align-items: center;
+            img {
+
+            }
+         }
+         .header_menu {
+            display: flex;
+            padding: 0 10px;
+            .menu_item {
+               list-style: none;
+               + .menu_item {
+                  margin-left: 19px;
+               }
+               a {
+                  text-decoration: none;
+                  padding: 10px;
+                  font-weight: 500;
+                  font-size: 18px;
+                  color: black;
+               }
+            }
+         }
+      }
+      .header_rightside {
+         padding-left: 10px;
+         display: flex;
+         align-items: center;
+         .header_log-in {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            padding: 10px 10px ;
+            font-weight: 500;
+         }    
+         .header_btn {
+            border-radius: 5px;
+            padding: 13px 15px;
+            margin-left: 28px;
+         }         
+         .header_search {
+            margin-left: 20px;
+            padding: 10px 10px;
+            margin-left: 9px;
+         }
+      }
+   }
+   
+   .section-start_building {
+      position: relative;
+      z-index: 1;
+      margin-top: 166px;
+      padding: 10px 0;
+      .buiding_wrapper {
+         .building_title {
+            width: 818px;
+            font-family: "Circular Std";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 85px;
+            line-height: 95px;
+            margin-bottom: 10px;
+         }  
+         .building_subtitle {
+            margin-top: 28px;
+            width: 716px;
+            line-height: 25px;
+         }
+         
+         .building_btn {
+            padding: 25px 63px;
+            margin-top: 31px;
+         }
+         span {
+            font-size: 18px;
+            color: #94A2B3;
+            margin-left: 4px;
+         }
+         .building_link {
+            margin-left: 6px;
+         }
+                  
+      }
+   }
+}
+
+   .section-start_features {
+      margin-top: 237px;
+      padding: 10px 0;
+      .features_title {} 
+      .features-wrapper {
+         display: flex;
+         .features_card-start {
+            
+            .card-start_image {
+               
+            } 
+            .features_subtitle {
+               
+            }
+            .features_link {
+               
+            } 
+         } 
+         .features_card-customize {
+            
+            .card-customize_image {
+               
+            }
+            .features_subtitle {}
+            
+            .features_link {}
+         }
+         .features_card-community {
+            
+            .card-community_image {
+               
+            }
+            .features_subtitle {}
+            
+            .features_link {}
+         } 
+      } 
+   } 
+// ______________________________section-2______________________________
