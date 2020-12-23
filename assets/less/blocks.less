@@ -1,5 +1,10 @@
 // main: style.less
 
+// v sec-doc bg-mg pos center. ili prosto background cover
+// ubrat' gorizont scroll (bg img v doce razdelit' na 2 chasti)
+// ubrat' box-shadow na sec-doc
+// fix right scroll in swiper
+
 // .wrapper {} 
 // .section {}
 .title {
@@ -23,6 +28,11 @@
    font-size: 18px;
    text-decoration: none;
    padding: 5px;
+
+   &:hover,
+   &:focus {
+      color: darken(#299EF3, 10%);
+   }
 }
 
 // ______________________________buttons______________________________
@@ -104,12 +114,19 @@
                   margin-left: 19px;
                }
 
-               a {
-                  text-decoration: none;
+               span {
                   padding: 10px;
-                  font-weight: 500;
+                  font-weight: 400;
                   font-size: 18px;
                   color: black;
+
+                  &:hover,
+                  &:focus {
+                     cursor: pointer;
+                     border-radius: 5px;
+                     background-color: #7854F7;
+                     color: white;
+                  }
                }
             }
          }
@@ -126,6 +143,11 @@
             font-size: 18px;
             padding: 10px 10px;
             font-weight: 500;
+
+            &:hover,
+            &:focus {
+               color: #7854F7;
+            }
          }
 
          .header_btn {
@@ -135,7 +157,6 @@
          }
 
          .header_search {
-            margin-left: 20px;
             padding: 10px 10px;
             margin-left: 9px;
          }
@@ -278,43 +299,54 @@
 .section-doc {
    padding: 10px 0;
    background-image: url('../img/section-doc-bg.png');
-   margin-top: 157px;
+   margin-top: 152px;
    background-repeat: no-repeat;
+   position: relative;
+
+   &::before {
+      content: '';
+      background-image: url(../img/doc-before.png);
+      width: 606px;
+      height: 330px;
+      position: absolute;
+      top: -18px;
+      right: 0;
+   }
 
    .doc_wrapper {
       margin: 0 auto;
       width: 1231px;
       position: relative;
 
-      &::before {
-         content: '';
-         background-image: url(../img/doc_card-develop-before.png);
-         width: 1703px;
-         height: 868px;
-         position: absolute;
-         top: -28px;
-         left: -128px;
-      }
-
-      &::after {
-         content: '';
-         background-image: url(../img/doc_card-community-before.png);
-         width: 522px;
-         height: 452px;
-         position: absolute;
-         bottom: 148px;
-         right: -182px;
-      }
 
       .doc_card {
          display: flex;
          position: relative;
-         z-index: 2;
+
+         &::before {
+            content: '';
+            background-image: url(../img/doc_card-develop-before.png);
+            width: 421px;
+            height: 722px;
+            position: absolute;
+            top: 117px;
+            left: -128px;
+         }
 
 
          &.reverse {
             margin-top: 51px;
             flex-direction: row-reverse;
+
+            &::before {
+               content: '';
+               background-image: url(../img/doc_card-community-before.png);
+               width: 522px;
+               height: 452px;
+               position: absolute;
+               top: -49px;
+               left: 891px;
+            }
 
             .doc_body {
                margin-top: 30px;
@@ -328,6 +360,8 @@
          }
 
          .doc_img-wrapper {
+            position: relative;
+            z-index: 3;
             margin-top: -50px;
 
             img {
@@ -383,7 +417,7 @@
 
    .trusted_title {
       width: 520px;
-      margin-bottom: 138px;
+      margin-bottom: 102px;
    }
 
    .swiper-block {
@@ -392,13 +426,14 @@
       border-radius: 20px;
       position: relative;
       margin: 0 auto;
+      overflow: initial;
 
       &::before {
          content: '';
          width: 678px;
          height: 363px;
          left: 50%;
-         bottom: -20px;
+         bottom: -28px;
          transform: translateX(-50%);
          background: #FFFFFF;
          box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
@@ -412,10 +447,9 @@
          width: 618px;
          height: 331px;
          left: 50%;
-         bottom: -40px;
+         bottom: -48px;
          transform: translateX(-50%);
          background: #FFFFFF;
-         box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
          border-radius: 20px;
          position: absolute;
       }
@@ -423,12 +457,18 @@
       .slider {
          overflow: hidden;
          position: relative;
+         box-sizing: border-box;
+         box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
+
 
          .swiper-slide {
+            position: relative;
             box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
-            padding: 100px 80px;
+            padding: 105px 80px 91px;
             background: #FFFFFF;
             border-radius: 20px;
+            max-height: 390px;
+            overflow: scroll;
 
             p {
                font-family: 'Circular Std';
@@ -444,18 +484,31 @@
 
    .swiper-btn {
       width: 730px;
-      position: relative;
-      z-index: 3;
       display: flex;
       justify-content: flex-end;
       margin: 90px auto 0;
+      padding-right: 89px;
       align-items: center;
+      z-index: 3;
+      position: relative;
 
-      .swiper-btn-next {}
+      .swiper-btn-next {
+         cursor: pointer;
+
+         &:hover,
+         &:focus {
+            transform: scale(1.1);
+         }
+      }
 
       .swiper-btn-prev {
+         cursor: pointer;
+         margin-right: 28px;
 
-         margin-right: 10px;
+         &:hover,
+         &:focus {
+            transform: scale(1.2);
+         }
       }
    }
 }
@@ -492,9 +545,10 @@
 
       .people_img-wrapper {
          margin-top: 22px;
-         text-align: center;
          position: relative;
          z-index: 2;
+         display: flex;
+         justify-content: center;
 
          img {}
       }
@@ -504,7 +558,6 @@
    .people_bottom {
       background: #5F37EF;
       padding: 79px 0;
-      margin-top: -4px;
       position: relative;
 
       &::before {
@@ -554,13 +607,13 @@
    background: #7854F7;
 
    .footer_container {
-      padding: 10px 10px 65px;
+      padding: 12px 10px 63px;
 
       .footer_features-wrapper {
          display: flex;
          justify-content: space-between;
          width: 1225px;
-         margin: 34px auto 0;
+         margin: 33px auto 0;
 
          .footer_features {
             display: flex;
@@ -618,6 +671,11 @@
                      line-height: 22px;
                      color: #FFFFFF;
                      text-decoration: none;
+
+                     &:hover,
+                     &:focus {
+                        color: darken(white, 25%);
+                     }
                   }
                }
             }

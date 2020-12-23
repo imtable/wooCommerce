@@ -13,6 +13,20 @@
 <body>
 
     <div class="wrapper">
+        <div id="mobile-menu">
+            <div class="block">
+                <ul>
+                    <li class="menu_item"><span class='anchor-1'>Sell</span></li>
+                    <li class="menu_item"><span class='anchor-2'>Marketplace</span></li>
+                    <li class="menu_item"><span class='anchor-3'>Community</span></li>
+                    <li class="menu_item"><span>Develop</span></li>
+                    <li class="menu_item"><span>Resources</span></li>
+                    <a href="#" class="header_log-in">Log In</a>
+                    <button class="header_btn btn md-trigger" data-modal='modal-1'>Get Started</button>
+                    <img src="assets/img/icon-search.png" alt="" class="header_search">
+                </ul>
+            </div>
+        </div>
         <section class="section-start section">
             <div class="section-start_header">
                 <div class="container header_container">
@@ -23,19 +37,24 @@
                             </a>
                             <nav>
                                 <ul class="header_menu">
-                                    <li class="menu_item"><a href="#"><span>Sell</span></a></li>
-                                    <li class="menu_item"><a href="#"><span>Marketplace</span></a></li>
-                                    <li class="menu_item"><a href="#"><span>Community</span></a></li>
-                                    <li class="menu_item"><a href="#"><span>Develop</span></a></li>
-                                    <li class="menu_item"><a href="#"><span>Resources</span></a></li>
+                                    <li class="menu_item"><span class='anchor-1'>Sell</span></li>
+                                    <li class="menu_item"><span class='anchor-2'>Marketplace</span></li>
+                                    <li class="menu_item"><span class='anchor-3'>Community</span></li>
+                                    <li class="menu_item"><span>Develop</span></li>
+                                    <li class="menu_item"><span>Resources</span></li>
                                 </ul>
                             </nav>
                         </div>
                         <div class="header_rightside">
                             <a href="#" class="header_log-in">Log In</a>
-                            <button class="header_btn btn">Get Started</button>
+                            <button class="header_btn btn md-trigger" data-modal='modal-1'>Get Started</button>
                             <img src="assets/img/icon-search.png" alt="" class="header_search">
                         </div>
+                        <button id="burger-menu">
+                            <div class="box box_item1"></div>
+                            <div class="box box_item2"></div>
+                            <div class="box box_item3"></div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -136,7 +155,7 @@
         <section class="section-trusted section">
             <div class="container">
                 <p class="trusted_title title">Trusted by Agencies & Store Owners</p>
-                <div class="swiper-block">
+                <div class="swiper-block swiper-container">
                     <div class="swiper-wrapper slider">
                         <div class="swiper-slide">
                             <p>1No other eCommerce platform allows people to start for free and grow
@@ -172,18 +191,6 @@
                     </div>
                 </div>
 
-                <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-                <script src="assets/js/swiper-bundle.min.js"></script>
-                <script>
-                var swiper = new Swiper('.swiper-block', {
-                    slidesPerView: 1,
-                    effect: 'fade',
-                    navigation: {
-                        nextEl: '.swiper-btn-next',
-                        prevEl: '.swiper-btn-prev',
-                    },
-                });
-                </script>
 
             </div>
         </section>
@@ -311,6 +318,61 @@
             </div>
         </footer>
     </div>
+    <div class="md-modal md-effect-1" id="modal-1">
+        <div class="md-content">
+            <h3>Get started</h3>
+            <div>
+                <div class="form">
+                    <form action="sender.php" method='post'>
+                        <div class="input">
+                            <input type="text" name='name' placeholder='Имя' required>
+                        </div>
+                        <div class="input">
+                            <input type="email" name='email' placeholder='Почта' required>
+                        </div>
+                        <div class="input">
+                            <input type="phone" name='phone' placeholder='Телефон' required>
+                        </div>
+                        <div class="input">
+                            <input type="hidden" name='place' value='Форма из шапки'>
+                        </div>
+                        <button type='button' class='btn'>Отправить</button>
+                    </form>
+                </div>
+                <button class="md-close">x</button>
+            </div>
+        </div>
+    </div>
+    <div class="md-overlay"></div><!-- the overlay element -->
+
+    <!-- classie.js by @desandro: https://github.com/desandro/classie -->
+    <script src="./assets/js/classie.js"></script>
+    <script src="./assets/js/modalEffects.js"></script>
+
+    <!-- for the blur effect -->
+    <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+    <script>
+    // this is important for IEs
+    var polyfilter_scriptpath = './assets/js/';
+    </script>
+    <script src="./assets/js/cssParser.js"></script>
+    <script src="./assets/js/css-filters-polyfill.js"></script>
+    <script src="./assets/js/jquery-1.11.1.min.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-block', {
+        slidesPerView: 1,
+        effect: 'fade',
+        navigation: {
+            nextEl: '.swiper-btn-next',
+            prevEl: '.swiper-btn-prev',
+        },
+    });
+    </script>
 </body>
 
 </html>
