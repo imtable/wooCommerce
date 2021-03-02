@@ -3,7 +3,7 @@
 2nd landing page
 
 ## desktop version
-![background-picture](https://i.imgur.com/6MisD5v.png)
+![background-picture](https://i.imgur.com/J7GZ8hw.jpg)
 #
 ## mobile version
-![background-picture](https:// )
+![background-picture](https://i.imgur.com/03NrjOj.jpg)
